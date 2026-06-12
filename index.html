@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho - Agro Forte, Futuro Sustentável</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4fff4;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2e7d32,#66bb6a);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+    max-width:800px;
+    margin:auto;
+}
+
+nav{
+    background:#1b5e20;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#c8e6c9;
+}
+
+section{
+    padding:60px 10%;
+}
+
+h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#388e3c;
+    margin-bottom:10px;
+}
+
+.banner{
+    background:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1200')
+    center/cover;
+    height:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.banner h2{
+    color:white;
+    font-size:2.5rem;
+    background:rgba(0,0,0,0.5);
+    padding:15px;
+    border-radius:10px;
+}
+
+.btn{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:20px;
+    font-size:1rem;
+}
+
+.btn:hover{
+    background:#1b5e20;
+}
+
+#mensagem{
+    margin-top:20px;
+    font-weight:bold;
+    color:#2e7d32;
+    font-size:1.1rem;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🌱 Agrinho 2025</h1>
+    <p>
+        Agro Forte, Futuro Sustentável: promovendo o equilíbrio entre
+        a produção agrícola e a preservação do meio ambiente.
+    </p>
+</header>
+
+<nav>
+    <a href="#agro">Agro Forte</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+    <a href="#futuro">Futuro</a>
+</nav>
+
+<div class="banner">
+    <h2>Produzir Hoje, Preservar para Amanhã</h2>
+</div>
+
+<section id="agro">
+    <h2>🚜 Agro Forte</h2>
+    <p>
+        O agronegócio é um dos pilares da economia brasileira,
+        responsável pela produção de alimentos, geração de empregos
+        e desenvolvimento das comunidades rurais.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Produção de Alimentos</h3>
+            <p>Garantia de abastecimento para milhões de pessoas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Inovação Tecnológica</h3>
+            <p>Uso de máquinas modernas e agricultura de precisão.</p>
+        </div>
+
+        <div class="card">
+            <h3>Desenvolvimento Rural</h3>
+            <p>Fortalecimento das famílias e comunidades do campo.</p>
+        </div>
+    </div>
+</section>
+
+<section id="sustentabilidade">
+    <h2>🌿 Sustentabilidade</h2>
+    <p>
+        Produzir com responsabilidade significa proteger rios,
+        florestas, solos e a biodiversidade para as próximas gerações.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Preservação Ambiental</h3>
+            <p>Proteção das matas e dos recursos naturais.</p>
+        </div>
+
+        <div class="card">
+            <h3>Uso Consciente da Água</h3>
+            <p>Irrigação eficiente e combate ao desperdício.</p>
+        </div>
+
+        <div class="card">
+            <h3>Energia Limpa</h3>
+            <p>Investimento em fontes renováveis e sustentáveis.</p>
+        </div>
+    </div>
+</section>
+
+<section id="futuro">
+    <h2>🌎 Futuro Sustentável</h2>
+    <p>
+        O futuro depende da união entre tecnologia, produção agrícola
+        e preservação ambiental. Juntos podemos construir um mundo
+        mais equilibrado.
+    </p>
+
+    <button class="btn" onclick="mostrarMensagem()">
+        Clique para uma mensagem sustentável
+    </button>
+
+    <div id="mensagem"></div>
+</section>
+
+<footer>
+    <p>
+        Projeto Agrinho - Agro Forte, Futuro Sustentável 🌱
+    </p>
+</footer>
+
+<script>
+function mostrarMensagem() {
+    const mensagens = [
+        "🌿 Cada árvore preservada ajuda a construir um futuro melhor.",
+        "🚜 O agro cresce quando a natureza é respeitada.",
+        "💧 Economizar água hoje garante recursos para amanhã.",
+        "🌎 Sustentabilidade é produzir sem destruir.",
+        "🌱 Pequenas ações geram grandes mudanças."
+    ];
+
+    const sorteio =
+        mensagens[Math.floor(Math.random() * mensagens.length)];
+
+    document.getElementById("mensagem").innerHTML = sorteio;
+}
+</script>
+
+</body>
+</html>
